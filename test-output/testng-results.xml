@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1317" started-at="2015-09-28T17:46:49Z" finished-at="2015-09-28T17:46:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1317" started-at="2015-09-28T17:46:49Z" finished-at="2015-09-28T17:46:51Z">
+      <class name="Grid_program">
+        <test-method status="FAIL" signature="logintest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Grid_program@675690]" name="logintest" duration-ms="1243" started-at="2015-09-28T23:16:50Z" data-provider="getdata" finished-at="2015-09-28T23:16:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alokraj09april]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Error forwarding the new session Empty pool of VM for setup Capabilities [{browserName=firefox, version=, platform=ANY}]
+Command duration or timeout: 357 milliseconds
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'alok-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session Empty pool of VM for setup Capabilities [{browserName=firefox, version=, platform=ANY}]
+Command duration or timeout: 357 milliseconds
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'alok-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+	at Grid_program.logintest(Grid_program.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.GridException: Error forwarding the new session Empty pool of VM for setup Capabilities [{browserName=firefox, version=, platform=ANY}]
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.seleniumhq.jetty7.servlet.ServletHolder.handle(ServletHolder.java:565)
+	at org.seleniumhq.jetty7.servlet.ServletHandler.doHandle(ServletHandler.java:479)
+	at org.seleniumhq.jetty7.server.session.SessionHandler.doHandle(SessionHandler.java:225)
+	at org.seleniumhq.jetty7.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.seleniumhq.jetty7.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.seleniumhq.jetty7.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.seleniumhq.jetty7.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.seleniumhq.jetty7.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.seleniumhq.jetty7.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.seleniumhq.jetty7.server.Server.handle(Server.java:349)
+	at org.seleniumhq.jetty7.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.seleniumhq.jetty7.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:47)
+	at org.seleniumhq.jetty7.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)
+	at org.seleniumhq.jetty7.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)
+	at org.seleniumhq.jetty7.http.HttpParser.parseNext(HttpParser.java:857)
+	at org.seleniumhq.jetty7.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.seleniumhq.jetty7.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:66)
+	at org.seleniumhq.jetty7.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:254)
+	at org.seleniumhq.jetty7.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.seleniumhq.jetty7.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	... 1 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="FAIL" signature="logintest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Grid_program@675690]" name="logintest" duration-ms="1243" started-at="2015-09-28T23:16:50Z" data-provider="getdata" finished-at="2015-09-28T23:16:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alokraj04april]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Error forwarding the new session Empty pool of VM for setup Capabilities [{browserName=chrome, version=, platform=ANY}]
+Command duration or timeout: 361 milliseconds
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'alok-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session Empty pool of VM for setup Capabilities [{browserName=chrome, version=, platform=ANY}]
+Command duration or timeout: 361 milliseconds
+Build info: version: '2.47.1', revision: '411b314', time: '2015-07-30 03:03:16'
+System info: host: 'alok-PC', ip: '192.168.0.100', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_45'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:155)
+	at Grid_program.logintest(Grid_program.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.grid.common.exception.GridException: Error forwarding the new session Empty pool of VM for setup Capabilities [{browserName=chrome, version=, platform=ANY}]
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.seleniumhq.jetty7.servlet.ServletHolder.handle(ServletHolder.java:565)
+	at org.seleniumhq.jetty7.servlet.ServletHandler.doHandle(ServletHandler.java:479)
+	at org.seleniumhq.jetty7.server.session.SessionHandler.doHandle(SessionHandler.java:225)
+	at org.seleniumhq.jetty7.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.seleniumhq.jetty7.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.seleniumhq.jetty7.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.seleniumhq.jetty7.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.seleniumhq.jetty7.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.seleniumhq.jetty7.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.seleniumhq.jetty7.server.Server.handle(Server.java:349)
+	at org.seleniumhq.jetty7.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.seleniumhq.jetty7.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:47)
+	at org.seleniumhq.jetty7.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)
+	at org.seleniumhq.jetty7.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)
+	at org.seleniumhq.jetty7.http.HttpParser.parseNext(HttpParser.java:857)
+	at org.seleniumhq.jetty7.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.seleniumhq.jetty7.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:66)
+	at org.seleniumhq.jetty7.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:254)
+	at org.seleniumhq.jetty7.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.seleniumhq.jetty7.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	... 1 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+      </class> <!-- Grid_program -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
